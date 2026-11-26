@@ -54,7 +54,7 @@ cd tab-management-chrome-extension
    ```
 2. Enable **Developer mode** using the toggle switch in the top-right corner.
 3. Click the **Load unpacked** button in the top-left corner.
-4. Select the `andpjllgocabfacjlelkfpdemfklpfpo` folder (or the `extension` symlink folder) inside this repository.
+4. Select the `extension/` folder inside this repository.
 5. The extension will appear in your Chrome toolbar.
 
 ### Step 3: Pin the Extension & Open Dashboard
@@ -86,7 +86,7 @@ cd tab-management-chrome-extension
 
 ```
 tab-management-chrome-extension/
-├── andpjllgocabfacjlelkfpdemfklpfpo/   # The enhanced Chrome Extension (Manifest V3)
+├── extension/                         # The enhanced Chrome Extension (Manifest V3)
 │   ├── manifest.json                  # Extension manifest (with tabGroups permission)
 │   ├── service-worker.mjs             # Service worker with tab group & auto-save engine
 │   ├── tab/                           # Dashboard UI (Vue.js application)
@@ -94,7 +94,6 @@ tab-management-chrome-extension/
 │   ├── styles/                        # Dashboard stylesheets
 │   ├── icons/                         # Extension icons
 │   └── _locales/                      # Internationalization files
-├── extension                          # Symlink to andpjllgocabfacjlelkfpdemfklpfpo
 ├── .gitignore                         # Git ignore configuration
 └── README.md                          # Documentation and usage guide
 ```
