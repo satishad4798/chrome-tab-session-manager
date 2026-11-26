@@ -41,11 +41,15 @@ This repository builds upon the foundational architecture of the popular [Tabler
 
 ## 🚀 How to Install and Use
 
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/satishad4798/tab-management-chrome-extension.git
-cd tab-management-chrome-extension
-```
+### Step 1: Download or Clone
+- **Option A (Quick Download — No Git Needed):**
+  1. Click the green **Code** button on GitHub and choose **Download ZIP** (or [Click here to download ZIP](https://github.com/satishad4798/tab-management-chrome-extension/archive/refs/heads/main.zip)).
+  2. Unzip/extract the downloaded archive anywhere on your computer.
+
+- **Option B (Using Git):**
+  ```bash
+  git clone https://github.com/satishad4798/tab-management-chrome-extension.git
+  ```
 
 ### Step 2: Load into Google Chrome
 1. Open Google Chrome and navigate to:
@@ -54,13 +58,17 @@ cd tab-management-chrome-extension
    ```
 2. Enable **Developer mode** using the toggle switch in the top-right corner.
 3. Click the **Load unpacked** button in the top-left corner.
-4. Select the `extension/` folder inside this repository.
+4. Select the `extension/` folder inside the extracted folder.
 5. The extension will appear in your Chrome toolbar.
 
 ### Step 3: Pin the Extension & Open Dashboard
-- Pin the extension icon to your toolbar.
+- Pin the extension icon to your toolbar for quick 1-click access.
 - Click the icon or open a new tab to access the dashboard.
 - You can create, name, organize, and reopen your tab sessions.
+
+### 🔄 How to Update in the Future
+- If you downloaded the ZIP: download the latest ZIP, extract it, and click the 🔄 **Reload** icon on the extension card in `chrome://extensions/`.
+- If you used Git: run `git pull` inside the folder, then click the 🔄 **Reload** icon in `chrome://extensions/`.
 
 ---
 
