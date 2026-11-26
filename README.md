@@ -1,6 +1,6 @@
 # Tab Management Chrome Extension
 
-An enhanced, production-ready session and tab manager extension for Google Chrome, built on top of [Tablerone](https://tabler.one/) with critical workflow enhancements: **persistent Chrome Tab Groups**, **instant real-time auto-saving**, and **zero-data-loss delta protection on browser close**.
+An enhanced session and tab manager extension for Google Chrome, built on top of [Tablerone](https://tabler.one/) with critical workflow enhancements: **persistent Chrome Tab Groups**, **instant real-time auto-saving**, and **zero-data-loss delta protection on browser close**.
 
 ---
 
