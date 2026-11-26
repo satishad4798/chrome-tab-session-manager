@@ -43,12 +43,12 @@ This repository builds upon the foundational architecture of the popular [Tabler
 
 ### Step 1: Download or Clone
 - **Option A (Quick Download — No Git Needed):**
-  1. Click the green **Code** button on GitHub and choose **Download ZIP** (or [Click here to download ZIP](https://github.com/satishad4798/tab-management-chrome-extension/archive/refs/heads/main.zip)).
+  1. Click the green **Code** button on GitHub and choose **Download ZIP** (or [Click here to download ZIP](https://github.com/satishad4798/chrome-tab-session-manager/archive/refs/heads/main.zip)).
   2. Unzip/extract the downloaded archive anywhere on your computer.
 
 - **Option B (Using Git):**
   ```bash
-  git clone https://github.com/satishad4798/tab-management-chrome-extension.git
+  git clone https://github.com/satishad4798/chrome-tab-session-manager.git
   ```
 
 ### Step 2: Load into Google Chrome
@@ -93,7 +93,7 @@ This repository builds upon the foundational architecture of the popular [Tabler
 ## 📁 Repository Structure
 
 ```
-tab-management-chrome-extension/
+chrome-tab-session-manager/
 ├── extension/                         # The enhanced Chrome Extension (Manifest V3)
 │   ├── manifest.json                  # Extension manifest (with tabGroups permission)
 │   ├── service-worker.mjs             # Service worker with tab group & auto-save engine
