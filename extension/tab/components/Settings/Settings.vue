@@ -241,7 +241,7 @@
                     class="small-input"
                     style="width: 32px"
                     min="1"
-                    :disabled="!this.localSettings.openCollectionSuspended"
+                    :disabled="!localSettings.openCollectionSuspended"
                   />
                   &nbsp; tabs or more hibernated
                 </label>
@@ -262,7 +262,7 @@
                   <label for="tabNapEnabledInput"> Hibernate tabs when not in use </label>
                 </div>
 
-                <div style="gap: 8px; display: flex; align-content: center" v-if="this.localSettings.tabNapEnabled">
+                <div style="gap: 8px; display: flex; align-content: center" v-if="localSettings.tabNapEnabled">
                   <div style="color: #8d8d8d; min-width: 50px">Unless:</div>
                   <div style="line-height: 16px; display: flex; align-items: center">
                     <input
@@ -281,7 +281,7 @@
                       id="tabNapSettingFocus"
                       ref="tabNapSettingFocus"
                       v-model="tabNapSettingFocusUI"
-                      :disabled="!this.localSettings.tabNapEnabled"
+                      :disabled="!localSettings.tabNapEnabled"
                     />
 
                     <label for="tabNapSettingFocus"> In focus </label>
@@ -293,7 +293,7 @@
                       id="tabNapSettingPinned"
                       ref="tabNapSettingPinned"
                       v-model="tabNapSettingPinnedUI"
-                      :disabled="!this.localSettings.tabNapEnabled"
+                      :disabled="!localSettings.tabNapEnabled"
                     />
 
                     <label for="tabNapSettingPinned"> Pinned </label>
@@ -305,7 +305,7 @@
                       id="tabNapSettingAV"
                       ref="tabNapSettingAV"
                       v-model="tabNapSettingAVUI"
-                      :disabled="!this.localSettings.tabNapEnabled"
+                      :disabled="!localSettings.tabNapEnabled"
                     />
 
                     <label for="tabNapSettingAV"> Playing audio/video </label>
@@ -317,14 +317,14 @@
                       id="tabNapSettingUnsavedForm"
                       ref="tabNapSettingUnsavedForm"
                       v-model="tabNapSettingUnsavedFormUI"
-                      :disabled="!this.localSettings.tabNapEnabled"
+                      :disabled="!localSettings.tabNapEnabled"
                     />
 
                     <label for="tabNapSettingUnsavedForm"> Unsaved form </label>
                   </div>
                 </div>
 
-                <div style="display: flex; gap: 8px; width: 100%" v-if="this.localSettings.tabNapEnabled">
+                <div style="display: flex; gap: 8px; width: 100%" v-if="localSettings.tabNapEnabled">
                   <div style="line-height: 12px; min-width: 50px; color: #8d8d8d">Never:</div>
 
                   <textarea
@@ -334,7 +334,7 @@ https://domain.com/category/specific-page - This URL
 https://domain.*/page - Wildcard URL"
                     ref="tabNapSettingsExcluded"
                     v-model="tabNapSettingsExcludedUI"
-                    :disabled="!this.localSettings.tabNapEnabled"
+                    :disabled="!localSettings.tabNapEnabled"
                   />
                 </div>
               </td>
