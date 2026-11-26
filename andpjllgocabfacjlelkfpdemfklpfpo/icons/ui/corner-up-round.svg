@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="64px" viewBox="0 0 55 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>corner-up-round</title>
+    <desc>Created with Sketch.</desc>
+    <g id="cluster-list-onboarding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-post-install" transform="translate(-1315.000000, -76.000000)" stroke="#000000" stroke-width="3">
+            <g id="instruction" transform="translate(400.000000, 79.000000)">
+                <g id="corner-up-round" transform="translate(915.000000, 0.000000)">
+                    <path d="M37.5,0 L37.5,43 C37.5,51.837 30.337,59 21.5,59 L0.5,59" id="Path"></path>
+                    <polyline id="Path" stroke-linecap="square" points="22.5 15 37.5 0 52.5 15"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

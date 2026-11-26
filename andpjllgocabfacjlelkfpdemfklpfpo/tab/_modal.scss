@@ -1,0 +1,34 @@
+#modal_window--header--close_button {
+  position: absolute;
+  right: 16px; /* 28 - (10/2) - 2(border) */
+  top: 12px; //21px; /* 28 - (10/2) - 2(border) */
+  cursor: pointer;
+  display: flex;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-out;
+  width: 48px;
+
+  background: var(--color-modal-button-background);
+
+  svg {
+    g,
+    path,
+    circle {
+      stroke: var(--color-text-black);
+    }
+  }
+
+  &:hover {
+    border-color: var(--color-modal-button-border);
+    background: var(--color-modal-button-background-hover);
+
+    svg {
+      g,
+      path,
+      circle {
+        transition: all 0.15s ease-out;
+        stroke: var(--color-blue);
+      }
+    }
+  }
+}

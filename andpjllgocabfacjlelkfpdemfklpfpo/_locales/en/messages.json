@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "TABLERONE tab manager",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "extDesc": {
+    "message": "All-in-one tab manager to save tabs, restore sessions, and organize bookmarks.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

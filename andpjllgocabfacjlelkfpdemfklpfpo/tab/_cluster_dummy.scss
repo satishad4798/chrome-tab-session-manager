@@ -1,0 +1,114 @@
+$color-dummy: #f4f4f4;
+
+.collection__dummy {
+  &.collection__dummy_minimal .window--screenshot--container {
+    background-image: none !important;
+  }
+
+  .window--screenshot--container {
+    background: none;
+  }
+
+  .window--screenshot--image {
+    background-image: url('/icons/ui/empty-thumbnail__dummy.svg');
+
+    @media (prefers-color-scheme: dark) {
+      background-image: url('/icons/ui/empty-thumbnail__dummy--dark.svg');
+    }
+  }
+
+  .window--header {
+    background: transparent;
+  }
+
+  .window--header--title--label---dummy {
+    height: 16px;
+    min-width: 100px;
+    display: inline-block;
+    border-radius: 8px; /* font size / 2 */
+    background: var(--color-dummy);
+  }
+
+  .button--normal---dummy {
+    height: 16px;
+    min-width: 100px;
+    display: inline-block;
+    border-radius: 8px; /* font size / 2 */
+    background: var(--color-dummy);
+  }
+
+  .button--square---dummy {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    border-radius: 8px; /* font size / 2 */
+    background: var(--color-dummy);
+  }
+
+  .window--header--buttons {
+    align-items: center;
+
+    span {
+      margin-left: 16px;
+    }
+  }
+
+  .tab-favicon---dummy {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--color-dummy);
+  }
+
+  .tab-title---dummy {
+    height: 8px;
+    min-width: 100px;
+    display: inline-block;
+    border-radius: 4px; /* font size / 2 */
+    background: var(--color-dummy);
+  }
+
+  .tab-url---dummy {
+    height: 4px;
+    min-width: 30px;
+    display: inline-block;
+    border-radius: 2px; /* font size / 2 */
+    background: var(--color-dummy);
+  }
+
+  .tab-buttons {
+    path {
+      stroke: var(--color-dummy); /* $color-dummy; */
+    }
+  }
+
+  .window--screenshot {
+    .window--screenshot--container {
+      background: none;
+    }
+    .window--screenshot--image {
+      border-color: var(--color-thumb-border); //$color-dummy;
+    }
+  }
+
+  table.tab-table {
+    tfoot {
+      visibility: hidden;
+      tr {
+        height: 40px;
+      }
+    }
+    tr {
+      &:hover {
+        background: none;
+      }
+
+      td {
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

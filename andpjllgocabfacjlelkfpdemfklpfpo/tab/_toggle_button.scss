@@ -1,0 +1,8 @@
+.vue-js-switch:not(.toggled) .v-switch-core {
+  background: var(--color-toggle-background) !important;
+
+  .v-switch-button {
+    background: var(--color-toggle-button-background) !important;
+    border: var(--color-toggle-button-border);
+  }
+}

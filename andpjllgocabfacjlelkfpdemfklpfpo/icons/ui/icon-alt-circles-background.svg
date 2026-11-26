@@ -1,0 +1,28 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#0F62FE" fill="none" fill-rule="evenodd">
+        <rect id="circle1" x="12" y="12" width="24" height="24" rx="8">
+            <animate begin="0s" attributeName="opacity" from="1" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="0s" attributeName="x" from="12" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="0s" attributeName="y" from="12" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="0s" attributeName="width" from="16" to="40" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="0s" attributeName="height" from="16" to="40" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="0s" attributeName="rx" from="6" to="20" dur="3s" fill="freeze" repeatCount="indefinite" />
+        </rect>
+        <rect id="circle2" x="12" y="12" width="16" height="16" rx="8" opacity="0">
+            <animate begin="1s" attributeName="opacity" from="1" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="1s" attributeName="x" from="12" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="1s" attributeName="y" from="12" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="1s" attributeName="width" from="16" to="40" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="1s" attributeName="height" from="16" to="40" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="1s" attributeName="rx" from="6" to="20" dur="3s" fill="freeze" repeatCount="indefinite" />
+        </rect>
+        <rect id="circle3" x="12" y="12" width="16" height="16" rx="8" opacity="0">
+            <animate begin="2s" attributeName="opacity" from="1" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="2s" attributeName="x" from="12" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="2s" attributeName="y" from="12" to="0" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="2s" attributeName="width" from="16" to="40" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="2s" attributeName="height" from="16" to="40" dur="3s" fill="freeze" repeatCount="indefinite" />
+            <animate begin="2s" attributeName="rx" from="6" to="20" dur="3s" fill="freeze" repeatCount="indefinite" />
+        </rect>
+    </g>
+</svg>
