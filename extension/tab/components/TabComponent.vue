@@ -381,7 +381,9 @@ export default {
   },
   computed: {
     tabShowDate() {
-      const myDate = new Date(Date.parse(this.tab._addedDate))
+      const dateStr = this.tab._addedDate || this.tab._openedDate || new Date().toISOString()
+      const myDate = new Date(Date.parse(dateStr))
+      if (isNaN(myDate.getTime())) return ''
       if (this.settingsTableroneTimestampFormat === 'relative') {
         return Library.timeSince(myDate, false)
       } else {
