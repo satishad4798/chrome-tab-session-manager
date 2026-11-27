@@ -208,6 +208,7 @@ async function syncWindowToDatabase(windowId) {
       }
       cleanTabs.push(tabObj);
     }
+    let liveWinIds = new Set((await chrome.windows.getAll()).map(w => w.id));
     let db = await xe;
     let tx = db.transaction(Y, "readwrite");
     let store = tx.store;
@@ -238,6 +239,27 @@ async function syncWindowToDatabase(windowId) {
     openedCl._modifiedDate = now;
     await store.put(openedCl);
     let targetSavedUid = openedCl.savedClusterUid;
+    if (!targetSavedUid && cleanTabs.length > 0) {
+      // Re-link a window restored after a browser restart (new windowId) to the
+      // saved session it came from, by tab-URL similarity (not by title).
+      let linkedUids = new Set(all.filter(c => c && c.windowId && c.windowId !== windowId && liveWinIds.has(c.windowId) && c.savedClusterUid).map(c => c.savedClusterUid));
+      let curUrls = new Set(cleanTabs.map(tb => tb.url));
+      let best = null, bestScore = 0;
+      for (let c of all) {
+        if (!c || c.windowId || c.orphanedDate || linkedUids.has(c._uid) || !Array.isArray(c.tabs) || c.tabs.length === 0) continue;
+        let savedUrls = new Set(c.tabs.map(tb => tb && tb.url).filter(Boolean));
+        let shared = 0;
+        for (let u of curUrls) if (savedUrls.has(u)) shared++;
+        let score = shared / (curUrls.size + savedUrls.size - shared);
+        if (score > bestScore) { bestScore = score; best = c; }
+      }
+      if (best && bestScore >= 0.6) {
+        targetSavedUid = best._uid;
+        openedCl.savedClusterUid = best._uid;
+        if (best.title) openedCl.title = best.title;
+        await store.put(openedCl);
+      }
+    }
     if (targetSavedUid) {
       let savedCl = await store.get(targetSavedUid);
       if (savedCl && !savedCl.windowId && !savedCl.orphanedDate) {
